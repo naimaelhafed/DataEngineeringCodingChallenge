@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'CrawlerTheguardian.middlewares.CrawlertheguardianSpiderMiddleware': 543,
+#    'Scrapy_Theguardian.middlewares.CrawlertheguardianSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'CrawlerTheguardian.middlewares.CrawlertheguardianDownloaderMiddleware': 543,
+#    'Scrapy_Theguardian.middlewares.CrawlertheguardianDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'CrawlerTheguardian.pipelines.CrawlertheguardianPipeline': 300,
+    'Scrapy_Theguardian.pipelines.CrawlertheguardianPipeline': 300,
 }
 
 MONGO_URI = 'mongodb+srv://root:root@news-psuqq.mongodb.net/test?retryWrites=true&w=majority'
