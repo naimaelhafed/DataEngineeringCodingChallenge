@@ -14,8 +14,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from scipy.sparse import coo_matrix
 from collections import Counter
-nltk.download('stopwords')
-nltk.download('wordnet')
+#nltk.download('stopwords')
+#nltk.download('wordnet')
 
 # MongoDB Connection
 client = MongoClient("mongodb+srv://root:root@news-psuqq.mongodb.net/test?retryWrites=true&w=majority")
