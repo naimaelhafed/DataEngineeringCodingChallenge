@@ -1,5 +1,5 @@
 import scrapy
-from CrawlerTheguardian.items import ArticleItem
+from Scrapy_Theguardian.items import ArticleItem
 
 
 
