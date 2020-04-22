@@ -118,4 +118,4 @@ def getArticles(keyword):
 if __name__ == "__main__":
     #print(articles_of_mongodb())
     #print(Preprocessing())
-    print(getArticles("sport"))
+    #print(getArticles("sport"))
