@@ -94,7 +94,28 @@ def list_keyword():
         liste.append(keywords(articles[i]))
     return(liste)
 
+#Save articles in dataframe format   
+def dataframe_news():
+    articles=articles_of_mongodb()
+    dataset=pd.DataFrame(articles)
+    text=Preprocessing()
+    keyword_list=list_keyword()
+    list_keywords=keyword_list
+    text_cleaner=pd.DataFrame({'text_cleaner':text,'list_keywords':list_keywords})
+    dataset=dataset.join(text_cleaner)
+    return dataset
+    
+# Retrieving articles by keyword
+def getArticles(keyword):
+    dataset=articles_of_mongodb()
+    dataset=pd.DataFrame(dataset)
+    dataset=dataframe_news()
+    data=dataset[dataset['list_keywords'].apply(lambda x : any((i for i in x if i.find(keyword) >= 0 )))]
+    return data[['_id','headline','author','text','url']]
+    
+    
+
 if __name__ == "__main__":
     #print(articles_of_mongodb())
     #print(Preprocessing())
-    print(list_keyword())
+    print(getArticles("sport"))
