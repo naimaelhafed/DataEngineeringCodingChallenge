@@ -77,7 +77,25 @@ def Preprocessing():
         corpus.append(text)
     return corpus
 
+# recovery of the 10 keywords of a sentence
+def keywords(phrase):
+    words = [word for word in phrase.split()]
+    wordcount = Counter(words).most_common(10)
+    keywords=dict(wordcount)
+    return list(keywords.keys())
+
+#Retrieving keywords from article text 
+def list_keyword():
+    dataset=articles_of_mongodb()
+    dataset=pd.DataFrame(dataset)
+    liste=[]
+    articles=Preprocessing()
+    for i in range(0,len(articles)):
+        liste.append(keywords(articles[i]))
+    return(liste)
 
 if __name__ == "__main__":
     #print(articles_of_mongodb())
-    print(Preprocessing())
+   # print(Preprocessing())
+    #print(keywords("McMichael apparently made the remark before police arrived on the scene, after shooting Arbery three times. McMichael and his father, Greg McMichael, were arrested last month and have been charged with murder and aggravated assault"))
+    print(list_keyword())
