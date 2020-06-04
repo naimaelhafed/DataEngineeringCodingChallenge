@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for Scrapy_Theguardian project
+# Scrapy settings for CrawlerTheguardian project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'Scrapy_Theguardian'
+BOT_NAME = 'CrawlerTheguardian'
 
 SPIDER_MODULES = ['Scrapy_Theguardian.spiders']
 NEWSPIDER_MODULE = 'Scrapy_Theguardian.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'Scrapy_Theguardian (+http://www.yourdomain.com)'
+#USER_AGENT = 'CrawlerTheguardian (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'Scrapy_Theguardian.middlewares.ScrapyTheguardianSpiderMiddleware': 543,
+#    'CrawlerTheguardian.middlewares.CrawlerTheguardianSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'Scrapy_Theguardian.middlewares.ScrapyTheguardianDownloaderMiddleware': 543,
+#    'CrawlerTheguardian.middlewares.CrawlerTheguardianDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -64,10 +64,12 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'Scrapy_Theguardian.pipelines.ScrapyTheguardianPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'Scrapy_Theguardian.pipelines.CrawlertheguardianPipeline': 300,
+}
 
+MONGO_URI = 'mongodb+srv://root:root@crawlertheguardian-sjvep.mongodb.net/crawlertheguardian?retryWrites=true&w=majority'
+MONGO_DATABASE = 'crawlertheguardian'
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
@@ -83,8 +85,8 @@ ROBOTSTXT_OBEY = True
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-#HTTPCACHE_ENABLED = True
+HTTPCACHE_ENABLED = True
 #HTTPCACHE_EXPIRATION_SECS = 0
-#HTTPCACHE_DIR = 'httpcache'
+HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
