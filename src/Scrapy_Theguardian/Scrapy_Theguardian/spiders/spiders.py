@@ -7,7 +7,7 @@ from Scrapy_Theguardian.items import ArticleItem
 class spiders(scrapy.Spider):
     name="CrawlerTheguardian"
     #categorie=['world','lifeandstyle','commentisfree','sport','culture','lifeandstyle']
-    start_urls = ['https://www.theguardian.com/commentisfree/all']
+    start_urls = ['https://www.theguardian.com/lifeandstyle/all']
     def parse(self, response):
         ARTICLE_URL_SELECTOR = '//*[contains(@class,"fc-item__link")]//@href'
         for article_url in response.xpath(ARTICLE_URL_SELECTOR).extract():

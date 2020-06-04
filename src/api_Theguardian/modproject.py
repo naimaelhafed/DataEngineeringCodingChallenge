@@ -113,11 +113,4 @@ def getArticles(keyword):
     data=dataset[dataset['list_keywords'].apply(lambda x : any((i for i in x if i.find(keyword) >= 0 )))]
     return data[['_id','headline','author','text','url']]
     
-
-if __name__ == "__main__":
-    #print(articles_of_mongodb())
-   # print(Preprocessing())
-    #print(keywords("McMichael apparently made the remark before police arrived on the scene, after shooting Arbery three times. McMichael and his father, Greg McMichael, were arrested last month and have been charged with murder and aggravated assault"))
-   # print(dataframe_news())
-    #print(getArticles("sport"))
-    
+   

@@ -1,0 +1,20 @@
+Content-Encoding: gzip
+Content-Type: text/html; charset=utf-8
+Etag: W/"hash-5243600204072797685"
+Link: <https://assets.guim.co.uk/stylesheets/a94b0cc2eedc7662124af75816540246/content.garnett.css>; rel=preload; as=style; nopush,<https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?rum=0&features=es6,es7,es2017,default-3.6,HTMLPictureElement,IntersectionObserver,IntersectionObserverEntry,fetch&flags=gated&callback=guardianPolyfilled&unknown=polyfill&clearCache=4>; rel=preload; as=script; nopush,<https://assets.guim.co.uk/javascripts/6757f60c46223c71ecad/graun.standard.js>; rel=preload; as=script; nopush,<https://assets.guim.co.uk/javascripts/6d586b51100e308413f3/graun.commercial.js>; rel=preload; as=script; nopush
+Accept-Ranges: bytes
+Date: Thu, 04 Jun 2020 16:39:59 GMT
+Age: 0
+Set-Cookie: GU_mvt_id=410507; expires=Wed, 02 Sep 2020 16:39:59 GMT; path=/; domain=.theguardian.com; Secure
+Set-Cookie: GU_geo_continent=AF; path=/; Secure
+X-Timer: S1591288800.721536,VS0,VE151
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; frame-src https: data:; style-src https: 'unsafe-inline'; img-src https: data: blob:; media-src https: data: blob:; font-src https: data:; connect-src https: wss:; child-src https: blob:
+Referrer-Policy: no-referrer-when-downgrade
+Feature-Policy: camera 'none'; microphone 'none'; midi 'none'; geolocation 'none'
+X-Gu-Edition: int
+Cache-Control: max-age=60, stale-while-revalidate=6, stale-if-error=864000, private, no-transform
+Vary: Accept-Encoding,User-Agent

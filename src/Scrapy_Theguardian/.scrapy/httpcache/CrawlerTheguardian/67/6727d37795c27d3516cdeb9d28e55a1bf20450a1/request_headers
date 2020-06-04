@@ -1,0 +1,6 @@
+Referer: https://www.theguardian.com/lifeandstyle?page=2
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/2.0.1 (+https://scrapy.org)
+Accept-Encoding: gzip, deflate
+Cookie: GU_geo_continent=AF; GU_mvt_id=410507
