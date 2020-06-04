@@ -94,8 +94,19 @@ def list_keyword():
         liste.append(keywords(articles[i]))
     return(liste)
 
+#Save articles in dataframe format   
+def dataframe_news():
+    articles=articles_of_mongodb()
+    dataset=pd.DataFrame(articles)
+    text=Preprocessing()
+    keyword_list=list_keyword()
+    list_keywords=keyword_list
+    text_cleaner=pd.DataFrame({'text_cleaner':text,'list_keywords':list_keywords})
+    dataset=dataset.join(text_cleaner)
+    return dataset
+
 if __name__ == "__main__":
     #print(articles_of_mongodb())
    # print(Preprocessing())
     #print(keywords("McMichael apparently made the remark before police arrived on the scene, after shooting Arbery three times. McMichael and his father, Greg McMichael, were arrested last month and have been charged with murder and aggravated assault"))
-    print(list_keyword())
+    print(dataframe_news())
