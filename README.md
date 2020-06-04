@@ -12,7 +12,7 @@ key | type | description
  --- | --- | --- 
 author | Array of strings | Author(s) of the article.
 headline | String | Headline of the article.
-text | content | The article's content (text only).
+text | content | The article's content.
 url | String | The article's page url.
 
 While Crawler theguardian Pipelines simply stores article data in Mongodb's "articles" collection.
