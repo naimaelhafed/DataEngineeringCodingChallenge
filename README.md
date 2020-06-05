@@ -20,7 +20,7 @@ to execute the scrapy,run the command :
 scrapy crawl CrawlerTheguardian
 
 ### modproject.py
-this module allows the pre-proccessing of text of articles (remove figure, punctuation, and)
+this module allows the pre-proccessing of text of articles (remove stopword, punctuation,WordNetLemmatizer,...)
 in addition it returns the keywords of each article text so that the user searches by the keyword
 
 ### api_Theguardian.ipynb
