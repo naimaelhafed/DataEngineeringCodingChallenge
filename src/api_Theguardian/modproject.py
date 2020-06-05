@@ -130,4 +130,5 @@ def getArticles(keyword):
     dataset=pd.DataFrame(dataset)
     dataset=dataframe_news()
     data=dataset[dataset['list_keywords'].apply(lambda x : any((i for i in x if i.find(keyword) >= 0 )))]
+    # return of list of articles in dataframe format
     return data[['_id','headline','author','text','url']]
