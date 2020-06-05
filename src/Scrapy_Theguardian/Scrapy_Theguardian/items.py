@@ -7,11 +7,13 @@
 
 import scrapy
 
-
 class ArticleItem(scrapy.Item):
+    # the author of the article
     author = scrapy.Field()
+    # the headline of the article
     headline = scrapy.Field()
+    # the text of the article
     text = scrapy.Field()
+    # the url of the article
     url = scrapy.Field()
-    
     pass
